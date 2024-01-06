@@ -29,8 +29,8 @@ jobs:
               uses: thedoctor0/zip-release@0.7.5
               with:
                 filename: site.zip
-            - uses: actions/create-release@v1
-              name: Create Release
+            - name: Create Release
+              uses: actions/create-release@v1              
               env:
                 GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} 
               with:
