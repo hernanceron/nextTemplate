@@ -26,4 +26,4 @@ jobs:
               with:
                 name: static-site
             - name: Test artifact download
-              run: ls-R
+              run: ls -R
